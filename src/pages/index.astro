@@ -1,11 +1,42 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Header from '../components/header.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Footer from '../components/footer.astro'
+import '../css/style.css'
 ---
 
 <Layout>
-	<Welcome />
+	<div class=" h-screen">
+		<div class="contenedor-total p-4">
+			<div class="contenedor-pag w-[87%] margin-auto gap-4 flex flex-col">
+				<!--  -->
+				<Header/>
+				<!--  -->
+				<main class=" box-border p-2">
+					<div class="contenedor-main">
+						<div class="contenedor-blog">
+							<div class="blog">
+								<div class="post1">
+									<section class="titulo_post1">
+										<h1 class="text-4xl">Tailwind Test : </h1>
+										<hr class=" mb-5 mt-5 w-[255px]">
+									</section>
+									<section class="description-post1">
+										<div class="description-txt">
+											<p>Este es una página de prueba con Tailwind CSS, una herramienta increíblemente poderosa y versátil que está revolucionando la forma en que se construyen interfaces web modernas. Tailwind CSS es un framework de CSS basado en utilidades, lo que significa que, en lugar de escribir hojas de estilo extensas con clases personalizadas para cada elemento, puedes aprovechar un conjunto de clases predefinidas que controlan casi todos los aspectos del diseño. Esto incluye desde colores y tamaños hasta alineaciones, márgenes, bordes, tipografía y mucho más.</p>
+											<p>La razón por la que Tailwind CSS se destaca entre otros frameworks de CSS, como Bootstrap o Foundation, es su enfoque minimalista y flexible. En lugar de imponer un diseño predefinido o una estética específica, Tailwind permite a los desarrolladores construir sus propios diseños desde cero, utilizando sus utilidades como bloques de construcción. Esto otorga un control total sobre el diseño final, lo que lo convierte en una opción ideal tanto para proyectos pequeños como para aplicaciones web a gran escala.</p>
+											<p>Al utilizar Tailwind CSS en esta página de prueba, podemos ver su simplicidad y su capacidad para agilizar el proceso de desarrollo. Por ejemplo, con unas pocas clases como <code class="code-t-1 bg-[#424242] rounded-[.25rem] text-[.875em]">text-4xl</code> y <code class="code-t-2 bg-[#424242] rounded-[.25rem] text-[.875em]">mb-5</code>, logramos crear un título llamativo y espaciado que cumple perfectamente con las necesidades visuales del diseño. No es necesario pasar horas ajustando manualmente el tamaño de fuente o los márgenes en una hoja de estilo; las utilidades de Tailwind ya están optimizadas para proporcionar resultados consistentes y estéticamente agradables.</p>
+											<p>Además, una de las mayores ventajas de Tailwind CSS es su capacidad para crear diseños completamente responsivos con facilidad. Por ejemplo, en esta página de prueba, podríamos añadir clases como <code class="code-t-3 bg-[#424242] rounded-[.25rem] text-[.875em]">sm:w-full md:w-2/3 lg:w-1/2</code> para controlar cómo se comporta el diseño en diferentes tamaños de pantalla, asegurándonos de que la experiencia del usuario sea fluida tanto en dispositivos móviles como en pantallas más grandes. Este enfoque basado en <em>"mobile-first"</em> es perfecto para los tiempos actuales, donde los usuarios acceden a contenido desde una amplia variedad de dispositivos.</p>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!--  -->
+				<Footer/>
+			</div>
+		</div>
+	</div>
 </Layout>
