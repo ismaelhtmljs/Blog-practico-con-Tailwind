@@ -8,13 +8,6 @@
     font-style: normal;
 }
 
-.sansMono {
-    font-family: "Spline Sans Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-}
-
 html,
 body {
     padding: 0;
