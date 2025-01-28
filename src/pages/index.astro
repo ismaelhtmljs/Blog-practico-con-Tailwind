@@ -1,9 +1,9 @@
 ---
-import Header from '../components/header.astro';
+import Header from '../components/header/header.astro';
 import Layout from '../layouts/Layout.astro';
-import Footer from '../components/footer.astro'
+import Footer from '../components/footer/footer.astro'
 import '../css/style.css'
-import '../css/global.css'
+import '../css/global/global.css'
 ---
 
 <Layout>
@@ -20,7 +20,7 @@ import '../css/global.css'
 								<div class="post1">
 									<section class="titulo_post1">
 										<h1 class="text-4xl">Tailwind Test : </h1>
-										<hr class=" mb-5 mt-5 w-[255px]">
+										<hr class=" mb-5 mt-5 w-[255px] max-sm:w-auto">
 									</section>
 									<section class="description-post1">
 										<div class="description-txt">
